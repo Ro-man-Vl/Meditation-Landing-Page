@@ -25,6 +25,17 @@ ul {
     list-style: none;
 }
 
+h2 {
+    font-family: 'Merienda One', cursive;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h4 {
     font-weight: 500;
     font-size: 32px;
@@ -185,11 +196,15 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .learn-more {
-    margin-top: 120px;
+    margin-top: 56px;
 }
 
 .learn-more__slick-slider {
     margin: 0 60px;
+}
+
+.slick-track {
+    padding: 45px 0;
 }
 
 .learn-more__block {
@@ -201,7 +216,7 @@ font-family: 'Merienda One', cursive;*/
     background-repeat: no-repeat;
     background-position: top;
     border-radius: 20px;
-    box-shadow: 0px 19px 50px rgba(26, 127, 114, 0.15);
+    box-shadow: 0px -15px 17px rgba(26, 127, 114, 0.1);
 }
 
 .slick-arrow {
@@ -253,14 +268,13 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .slick-dots {
-    position: absolute;
     font-size: 0px;
-    display: flex;
-    bottom: -60px;
-    left: 805px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .slick-dots li {
+    display: inline-block;
     margin: 0 15px;
 }
 
@@ -286,6 +300,7 @@ font-family: 'Merienda One', cursive;*/
 .learn-more__block-logo img {
     width: 100%;
 }
+
 .learn-more__block-title {
     margin-top: 20px;
     text-align: center;
@@ -304,6 +319,76 @@ font-family: 'Merienda One', cursive;*/
     border-radius: 30px;
     box-shadow: 0px 13px 28px rgba(26, 127, 114, 0.2);
 }
+
 .learn-more__block-link {
     padding: 12px 44px;
+}
+
+.yoga {
+}
+.container {
+}
+
+.yoga__header {
+    margin-top: 96px;
+}
+
+.yoga__header-title {
+    max-width: 706px;
+}
+
+.yoga__header-text {
+    margin: 22px auto 0 auto;
+    max-width: 1105px;
+    text-align: center;
+}
+
+.yoga__tabs-area {
+    margin-top: 14px;
+    background-image: url(../images/yoga-bg-flower.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    /* backdrop-filter: ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.yoga__img-wrapper {
+    max-width: 745px;
+}
+.yoga-img {
+    width: 100%;
+    overflow: hidden;
+}
+.yoga__tabs-wrapper {
+   padding: 56px 0 132px;
+}
+.yoga__tab {
+    max-width: 717px;
+    padding: 35px 58px 35px 40px;
+    cursor: pointer;
+}
+
+.yoga__tab:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.yoga__tab:hover {
+    background-image: url(../images/tab-hover-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    box-shadow: -15px 8px 20px rgba(26, 127, 114, 0.15);    
+}
+
+.yoga__tab-title {
+    padding-bottom: 10px;
+}
+.yoga__tab-text {
+    line-height: 147%;
+    text-indent: ;
+}
+.yoga__tab-more-text {
 }
