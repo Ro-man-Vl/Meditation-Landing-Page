@@ -325,12 +325,12 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .yoga {
+    margin-top: 96px;
 }
-.container {
+.yoga__container {
 }
 
-.yoga__header {
-    margin-top: 96px;
+.yoga__header {  
 }
 
 .yoga__header-title {
@@ -391,4 +391,100 @@ font-family: 'Merienda One', cursive;*/
     text-indent: ;
 }
 .yoga__tab-more-text {
+}
+
+.music {
+    
+}
+
+.music__container {
+    padding-top: 59px;
+    padding-bottom: 162px;
+    background-image: url(../images/music-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left; 
+}
+
+.music__header {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1105px;
+}
+
+.music__header-title {
+    max-width: 730px;
+}
+
+.music__header-text {
+    margin-top: 22px;
+}
+
+.music__body {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.musick__media-area {
+    padding-left: 150px;
+}
+.music__item {
+    width: 650px;
+    padding: 32px 40px;
+    background-image: url(../images/music-item-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    align-items: center;
+    box-shadow: -26px 4px 79px rgba(168, 207, 202, 0.39);
+    border-radius: 15px;
+}
+
+.music__item:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.music__item-wraper {
+    width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.music__item-header {
+}
+.music__item-text {
+    margin-top: 10px;
+}
+.music__item-button {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(180deg, #259385 0%, #159685 100%);
+    border-radius: 50%;
+    border: 2px solid #E6F8F5;
+    box-shadow: 0px 9px 24px rgba(26, 127, 114, 0.23);
+    cursor: pointer;
+
+}
+
+.music__item-button span {
+    display: block;
+    margin: auto 37%;
+    width: 0;
+    height: 0;
+    border-left: solid 29px #fff;
+    border-top: solid 15px transparent;
+    border-bottom: solid 15px transparent;
+}
+
+.music__img-wrapper {
+    max-width: 696px;
+    margin-right: 165px;
+}
+.music__img {
+    width: 100%;
+    display: block;
 }
