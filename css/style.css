@@ -413,7 +413,7 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .music__header-title {
-    max-width: 730px;
+    max-width: 706px;
 }
 
 .music__header-text {
@@ -484,7 +484,240 @@ font-family: 'Merienda One', cursive;*/
     max-width: 696px;
     margin-right: 165px;
 }
+
 .music__img {
     width: 100%;
     display: block;
+}
+
+.meditation {
+    position: relative;
+    top: -40px;
+}
+
+.meditation__container {
+    background-image: url(../images/meditation-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    padding-top: 128px;
+    padding-bottom: 162px;
+}
+
+.meditation__header {
+    
+}
+
+.meditation__header-title {
+    max-width: 706px;
+}
+.meditation__header-text {
+    margin-top: 22px;
+    max-width: 1105px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.meditation__body {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meditation__column {
+}
+.meditation__column--left {
+    padding-left: 119px;
+}
+.meditation__block {
+    max-width: 597px;
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 15px;
+}
+
+.meditation__block:not(:first-child) {
+    margin-top: 100px;
+}
+
+.meditation__block--left {
+    background-image: url(../images/meditation-block-left-bg.png);
+    padding: 25px 35px 25px 79px;
+    text-align: right;
+}
+.meditation__block-header {
+    
+}
+.meditation__block-header--left {
+    
+}
+.meditation__block-text {
+    margin-top: 10px;
+    max-height: 93px;
+    overflow: hidden;    
+}
+.meditation__block-text--left {
+}
+.meditation__img-wrapper {
+}
+.meditation__img {
+}
+.meditation__column--right {
+    padding-right: 119px;
+}
+.meditation__block--right {
+    background-image: url(../images/meditation-block-right-bg.png);
+    padding: 25px 79px 25px 35px;
+    text-align: left;
+}
+.meditation__block-header--right {
+    
+}
+.meditation__block-text--right {
+}
+
+.transformation {
+}
+
+.transformation-container {
+    background-image: url(../images/transformation-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.transformation__header {
+    padding-top: 67px;
+    text-align: center;
+}
+
+.transformation__header-title {
+    max-width: 578px;
+    margin: 0 auto;
+}
+.transformation__header-text {
+    max-width: 1105px;
+    margin: 22px auto 0 auto;
+}
+.transformation__body {
+    margin: 70px 200px 0px;
+    padding-bottom: 130px;
+
+}
+.transformation__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transformation__block:not(:first-child) {
+    margin-top: 70px;
+}
+
+.transformation__block--1 {
+}
+
+.transformation__img-wrapper {
+    max-width: 766px;
+}
+
+.transformation__img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.transformation__block-content {
+    max-width: 619px;
+    text-align: left;
+}
+
+.block-content__title {
+}
+
+.block-content__text {
+    margin-top: 17px;
+}
+.block-content__button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 44px;
+    background: linear-gradient(180deg, #259385 0%, #159685 100%);
+    box-shadow: 0px 13px 28px rgba(26, 127, 114, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.block-content__button-link {
+    text-align: center;
+    color: #fff;
+}
+.transformation__block--2 {
+    flex-direction: row-reverse;
+}
+
+.footer {
+}
+.footer__container {
+    padding-top: 113px;
+    padding-bottom: 30px;
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer__logo {
+    display: block;
+    width: 152px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.footer__menu {
+    width: fit-content;
+    margin: 30px auto 0 auto;
+}
+
+.footer__menu-list {
+
+}
+
+.footer__menu-item {
+    position: relative;
+}
+
+.footer__menu-item + .footer__menu-item::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #000000;
+    top: 6px;
+}
+
+.footer__menu-item-link {
+    padding: 0 20px;
+}
+
+.footer__social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social-links-item {
+    max-width: 55px;
+    max-height: 55px;
+    border-radius: 50%;
+}
+
+.footer__social-links-item:not(:last-child) {
+    margin-right: 30px;
+}
+.social-linnks__facebook {
+}
+.social-linnks__instagram {
+}
+.social-linnks__twitter {
 }
