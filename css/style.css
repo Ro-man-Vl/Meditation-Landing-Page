@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(59, 209, 187, 0.09);
+    /* background-color: rgb(59, 209, 187, 0.09); */
     font-family: 'Heebo', sans-serif;
     font-weight: normal;
     font-size: 24px;
@@ -47,6 +47,7 @@ h4 {
     max-width: 1940px;
     padding: 0 10px;
     margin: 0 auto;
+    background-color: rgb(59, 209, 187, 0.09);
 }
 
 .logo-img {
@@ -196,7 +197,10 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .learn-more {
-    margin-top: 56px;
+}
+
+.learn-more__container {
+    padding-top: 56px;
 }
 
 .learn-more__slick-slider {
@@ -325,9 +329,10 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .yoga {
-    margin-top: 96px;
 }
+
 .yoga__container {
+    padding-top: 96px;
 }
 
 .yoga__header {  
@@ -399,7 +404,7 @@ font-family: 'Merienda One', cursive;*/
 
 .music__container {
     padding-top: 59px;
-    padding-bottom: 162px;
+    padding-bottom: 150px;
     background-image: url(../images/music-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -491,8 +496,6 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .meditation {
-    position: relative;
-    top: -40px;
 }
 
 .meditation__container {
@@ -589,7 +592,7 @@ font-family: 'Merienda One', cursive;*/
 }
 
 .transformation__header {
-    padding-top: 67px;
+    padding-top: 120px;
     text-align: center;
 }
 
