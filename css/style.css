@@ -86,21 +86,6 @@ h4 {
     box-shadow: -1px 3px 8px 2px hsl(0deg 0% 0% / 50%);
 }
 
-/* .button:hover::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    bottom: -20px;
-    left: -20px;
-    right: -20px;
-    z-index: 9;
-    border-radius: 40px;
-    linear-gradient(90deg, #159685 25%, #99C41D, #159685 75%);
-    background-size: 400%;
-    filter: blur(20px);
-    animation: animate 6s linear infinite;
-} */
-
 @keyframes animate {
     0% {
         background-position: 100%;
@@ -143,12 +128,12 @@ font-family: 'Merienda One', cursive;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 130px;
+    height: 100px;
 }
 
 .header__logo {
-    width: 139px;
-    margin: 5px 0 0px 150px;
+    width: 125px;
+    margin: 20px 0 0px 150px;
 }
 
 .header__menu-burger {
@@ -156,16 +141,27 @@ font-family: 'Merienda One', cursive;*/
 
 .header__menu-list {
     margin-right: 150px;
+    align-items: center;
+}
+
+.header__menu-item {
+    position: relative;
+    cursor: pointer;
+    transition: color .5s;
 }
 
 .header__menu-item:not(:last-child) {
     margin-right: 80px;
 }
+
 .header__menu-item-active {
-    position: relative;
     width: 116px;
     display: flex;
     color: #1A7F72;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 47px;
+    transition: font-size .5s ease-in-out;
 }
 
 .header__menu-item-active::before {
@@ -173,9 +169,83 @@ font-family: 'Merienda One', cursive;*/
     content: '';
     width: 116px;
     height: 10px;
-    top: 75px;
+    top: 63px;
     background-color: #1A7F72;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
+    transition: height .5s ease-in-out;
+}
+
+.current {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.current::before {
+    height: 0px;
+}
+
+
+.bounce {
+    color: #1A7F72;
+    transition: color .1s; 
+}
+
+.bounce::before {
+    position: absolute;
+    content: '';
+    background-color: rgb(28, 127, 114, .7);
+    animation: bounce 3s ease-in-out .1s 1 forwards;
+}
+
+@keyframes bounce {
+    0% {
+        top: 0px;
+        left: -10px;
+        right: -10px;
+        height: 30px;
+        border-radius: 10px 10px 10px 10px;
+        opacity: .5;
+    }
+    20% {
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        opacity: 1;
+    }
+    40% {
+        top: 40px;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        opacity: 1;
+    }
+    60% {
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        opacity: 1;
+    }
+    80% {
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        opacity: 1;
+    }
+    100% {
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        height: 10px;
+        border-radius: 10px 10px 0px 0px;
+        opacity: 1;
+    }
 }
 
 .heder__menu-item-link {
