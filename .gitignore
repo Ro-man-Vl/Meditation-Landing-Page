@@ -1,4 +1,10 @@
-meditation-landing-page-source-file.fig
-normalize.css
-slick.css
-slick.min.js
+.DS_Store
+.idea/
+.idea/*
+.vscode
+*.sublime*
+npm-debug.*
+
+
+node_modules/
+package-lock.json
