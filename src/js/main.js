@@ -73,7 +73,6 @@ $(function () {
   });
   
   // Audio player --------------------------------------------------------------
-  // const audio = $('.music__player')[0];
 
   $('.music__item-button').on('click', function() {
     const audio = $(this).siblings('.music__player')[0];
@@ -94,5 +93,14 @@ $(function () {
 		closeBtnInside:true,
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
 	  });
+
+    // Burger menu ------------------------------------------------------------
+
+    $('.header__menu-burger').on('click', () => {
+            
+      $('.header__menu').toggleClass('header__menu--active');
+      $('.header__menu-burger').toggleClass('header__menu-burger--active');
+      $('body').toggleClass('lock');
+    });
 
 });
