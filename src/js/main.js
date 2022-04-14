@@ -6,7 +6,39 @@ $(function () {
     arrows: true,
     dots: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          arrows: true,
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          infinite: true,
+          arrows: false,
+          dots: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 501,
+        settings: {
+          infinite: true,
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
 
   // Menu hiddern on scroll -------------------------------------------------
@@ -87,20 +119,29 @@ $(function () {
     };
   });
 
-  // Magnific Popup
+  // Magnific Popup -------------------------------------------------------------
   $('.meditation__block').magnificPopup({
 		type:'inline',
 		closeBtnInside:true,
 		midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-	  });
+	});
 
-    // Burger menu ------------------------------------------------------------
+  // Burger menu ------------------------------------------------------------
 
-    $('.header__menu-burger').on('click', () => {
+  $('.header__menu-burger').on('click', () => {
             
-      $('.header__menu').toggleClass('header__menu--active');
-      $('.header__menu-burger').toggleClass('header__menu-burger--active');
-      $('body').toggleClass('lock');
-    });
+    $('.header__menu').toggleClass('header__menu--active');
+    $('.header__menu-burger').toggleClass('header__menu-burger--active');
+    $('body').toggleClass('lock');
+  });
+
+  // Simple bar --------------------------------------------------------------
+
+  // new SimpleBar($('.yoga__simple-bar')[0]);
+  // new SimpleBar($('.yoga__simple-bar')[1]);
+  // new SimpleBar($('.yoga__simple-bar')[2]);
+
+  new SimpleBar(document.getElementById('yoga__simple-bar'));
+  
 
 });
