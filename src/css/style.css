@@ -1371,7 +1371,37 @@ h4 {
     }
 
     .meditation__block {
-        min-height: 155px;
+        display: flex;
+        position: relative;
+        min-height: 120px;
+        max-width: 350px;
+        background-clip: padding-box;
+        border: 3px solid transparent;
+    }
+
+    .meditation__block::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        border-radius: inherit;
+        margin: -3px;
+    }
+
+    .meditation__block--left {
+        background-image: url(../img/gras-bg.svg), linear-gradient(90deg, #a6d6c7, #c4eee9);
+    }
+
+    .meditation__block--left::before {
+        background: linear-gradient(to left, #418d7b, 30%, #fff);
+    }
+
+    .meditation__block--right {
+        background-image: url(../img/gras-bg.svg), linear-gradient(270deg, #a6d6c7, #c4eee9);
+    }
+
+    .meditation__block--right::before {
+        background: linear-gradient(to right, #418d7b, 30%, #fff);
     }
 
     .meditation__block-text {
@@ -1379,7 +1409,7 @@ h4 {
     }
 
     .meditation__img {
-        max-height: 600px;
+        max-height: 480px;
     }
 
     .meditation__column--left {
@@ -1389,12 +1419,14 @@ h4 {
         padding: 0 25px 0 10px;
     }
 
-    .meditation__block {
-        max-width: 330px;
-    }
-
     .meditation__block:not(:first-child) {
         margin-top: 60px;
+    }
+
+    .meditation__block-header {
+        font-size: 26px;
+        margin: auto;
+        text-align: center;
     }
 
     .transformation__block-content {
@@ -1715,11 +1747,32 @@ h4 {
 
     
     .meditation__block {
-        max-width: 210px;
+        max-width: 250px;
+        min-height:105px;
+    }
+
+    .meditation__block:not(:first-child) {
+        margin-top: 50px;
+    }
+
+    .meditation__column--left {
+        padding: 0 10px 0 15px;
+    }
+
+    .meditation__column--right {
+        padding: 0 15px 0 10px;
     }
 
     .meditation__body {
         margin-top: 50px;
+    }
+
+    .meditation__block-header {
+        font-size: 20px;
+    }
+
+    .meditation__img {
+        max-height: 400px;
     }
 
     .transformation__block {
@@ -1731,8 +1784,25 @@ h4 {
         padding-bottom: 30px;
     }
 
+    .transformation__img {
+        max-width: 450px;
+    }
+
     .transformation__block-content {
         max-width: 700px;
+    }
+
+    .block-content__title {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .block-content__text {
+        text-align: center;
+    }
+
+    .block-content__button {
+        margin: 30px auto;
     }
 
     .footer__menu-item + .footer__menu-item::before {
@@ -1976,17 +2046,24 @@ h4 {
         flex-direction: column;
     }
 
+    .meditation__body {
+        margin-top: 35px;
+    }
+
     .meditation__block {
         max-width: 350px;
+        min-height: 85px;
     }
 
-    .meditation__block {
-        min-height: 120px;
+    .meditation__block--left,
+    .meditation__block--right {
+        background-image: url(../img/gras-bg.svg), linear-gradient(0deg, #a6d6c7, #c4eee9);
+        padding: 15px;
     }
 
-    .meditation__block-header--left,
-    .meditation__block-header--right {
-        text-align: center;
+    .meditation__block--right::before,
+    .meditation__block--left::before {
+        background: linear-gradient(0deg, #418d7b, 30%, #fff);
     }
 
     .meditation__block:not(:first-child) {
@@ -1994,7 +2071,7 @@ h4 {
     }
 
     .meditation__img {
-        max-height: 450px;
+        max-height: 420px;
         margin-top: 20px;
     }
 
@@ -2005,6 +2082,10 @@ h4 {
 
     .transformation__body {
         margin: 70px 50px 0px;
+    }
+
+    .transformation__img {
+        max-width: 425px;
     }
 
     .footer__menu {
@@ -2053,7 +2134,12 @@ h4 {
     }
 
     .meditation__block {
-        max-width: 280px;
+        max-width: 200px;
+        padding: 10px;
+    }
+
+    .meditation__block:not(:first-child) {
+        margin-top: 20px;
     }
 
     .meditation__img {
@@ -2068,27 +2154,19 @@ h4 {
         margin: 30px auto;
     }
 
-    .block-content__title {
-        text-align: center;
-    }
-
     .transformation__header {
         padding-top: 50px;
     }
 
     .transformation__body {
-        margin: 20px 0px 0px;
+        margin: 30px 0px 0px;
     }
 
-    .block-content__button {
-        margin: 20px auto;
-    }
-
-    .block-content__button {
-        margin: 20px auto;
+    .transformation__img {
+        max-width: 350px;
     }
 
     .transformation__body {
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
 }
