@@ -137,11 +137,15 @@ $(function () {
 
   // Simple bar --------------------------------------------------------------
 
-  // new SimpleBar($('.yoga__simple-bar')[0]);
-  // new SimpleBar($('.yoga__simple-bar')[1]);
-  // new SimpleBar($('.yoga__simple-bar')[2]);
-
-  new SimpleBar(document.getElementById('yoga__simple-bar'));
+  new SimpleBar(document.getElementById('yoga__simple-bar'), {
+    scrollbarMaxSize: 50,
+  });
   
+  new SimpleBar(document.getElementById('yoga__simple-bar1'), {
+    scrollbarMaxSize: 50,
+  });
+  new SimpleBar(document.getElementById('yoga__simple-bar2'), {
+    scrollbarMaxSize: 50,
+  });
 
 });
